@@ -1,0 +1,9 @@
+# Meta
+
+Name: Ritchey Markup File To HTML Files
+Implementation: 1781384111
+Version: 1
+Release Type: Stable
+Long Identifier: Ritchey Markup File To HTML Files i1781384111 v1
+Short Identifier: RMFTHFi1781384111v1
+Author: James Daniel Marrs Ritchey

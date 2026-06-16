@@ -1,0 +1,6 @@
+# Notes
+
+Some useful bits of information about the project.
+
+List:
+- 

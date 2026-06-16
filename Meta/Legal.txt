@@ -1,0 +1,7 @@
+# Legal
+
+Copyright © James Daniel Marrs Ritchey.
+
+## Licensing
+
+This project is hereby licensed under the Ritchey Permissive License v19. A copy of the license text can be found at "/Meta/License Texts/Ritchey Permissive License v19.txt".

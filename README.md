@@ -1,1 +1,3 @@
-# ritchey_markup_file_to_html_files_i1781384111
+# Readme
+
+This file is here for compatibility purposes. Read "/Meta/Meta.txt", "/Meta/Description.txt", and "/Meta/Notes.txt" instead.

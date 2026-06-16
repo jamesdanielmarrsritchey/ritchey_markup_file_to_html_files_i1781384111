@@ -1,0 +1,444 @@
+/* Set "preserve_empty_lines" to TRUE */
+
+/* Any imported fonts need to be declared at the top of the CSS document */
+
+/* Serif */
+ 
+body {
+	font-family: serif;
+	font-size: 16px;
+	margin: 0px;
+}
+
+/* Noto Serif. Source: https://fonts.google.com/noto/specimen/Noto+Serif/about */
+/*
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+body {
+	font-family: 'Noto Serif', serif; 
+}
+*/
+
+/* Sans-serif */
+/* 
+body {
+	font-family: sans-serif; 
+}
+*/
+
+/* Noto Sans-Serif. Source: https://fonts.google.com/noto/specimen/Noto+Sans/about */
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Serif&display=swap');
+body {
+	font-family: 'Noto Sans', sans-serif;
+}
+*/
+
+/* Inclusive Sans. Source: https://fonts.google.com/specimen/Inclusive+Sans/about */
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap');
+body {
+	font-family: 'Inclusive Sans', sans-serif;
+}
+*/
+.page_outter {
+		background-color: #FFFFFF;
+		height: 99vh;
+    	margin: 0px;
+}
+
+@media print {
+    .page_outter {
+        height: auto;
+        overflow: visible;
+        box-sizing: border-box;
+    }
+}
+.page_inner {
+	padding-bottom: 25px;
+	padding-top: 25px;
+	padding-right: 25px;
+	padding-left: 25px;
+}
+.page_meta {
+	text-align: right;
+}
+.page_content {
+	
+}
+
+.concatenation_buffer_top {
+	position: fixed;
+	top: 0;
+	min-height: 1px;
+	left: 0;
+	z-index: 2;
+	color: #fff;
+	font-size: 2px;
+	text-align: left;
+	display: none;
+}
+.concatenation_buffer_bottom {
+	position: fixed;
+	bottom: 0;
+	min-height: 1px;
+	left: 0;
+	z-index: 2;
+	color: #fff;
+	font-size: 2px;
+	text-align: left;
+	display: none;
+}
+
+.hr_content {
+	border-width: 0px;
+	border-top-color: #EEEEEE;
+	border-top-style: dotted;
+	border-top-width: 8px;
+	display: none;
+}
+@media print {
+   .hr_content {
+  		display: none;
+  	}
+}
+
+.bold {
+	font-weight: bold;
+}
+.italic {
+	font-style: italic;
+}
+.underline {
+	text-decoration: underline;
+}
+.strikethrough {
+	text-decoration: line-through;
+}
+
+a:link {
+  color: #072cf0;
+  text-decoration: underline;
+}
+a:visited {
+  color: #072cf0;
+  text-decoration: underline;
+}
+a:hover {
+  color: #072cf0;
+  text-decoration: underline;
+}
+a:active {
+  color: #072cf0;
+  text-decoration: underline;
+}
+
+.tab_outter {
+	min-width: 0.5in;
+	width: 0.5in;
+	display: inline-block;
+}
+
+.h1_outter {
+	max-width: 100%;
+	min-width: 100%;
+}
+.h1_inner {
+	max-width: 100%;
+	min-width: 100%;
+}
+.h1_content {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 64px;
+	text-decoration: none;
+	font-weight: bolder;
+	max-width: 100%;
+	min-width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.h2_outter {
+	max-width: 100%;
+	min-width: 100%;
+}
+.h2_inner {
+	max-width: 100%;
+	min-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.h2_content {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	color: #FFFFFF;
+	font-size: 40px;
+	text-decoration: none;
+	font-weight: bolder;
+	display: inline-block;
+	background-color: #2d2828;
+	padding-left: 8px;
+	padding-right: 8px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.h3_outter {
+	max-width: 100%;
+	min-width: 100%;
+}
+.h3_inner {
+	max-width: 100%;
+	min-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.h3_content {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	color: #333333;
+	font-size: 30px;
+	font-weight: bolder;
+	border-bottom-color: #bfbfbf;
+	border-bottom-style: solid;
+	border-bottom-width: 3px; 
+	max-width: 100%;
+	min-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.h4_outter {
+	max-width: 100%;
+	min-width: 100%;
+}
+.h4_inner {
+	max-width: 100%;
+	min-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.h4_content {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 24px;
+	color: #111111;
+	text-decoration: none;
+	max-width: 100%;
+	min-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 2px;
+}
+
+.h5_outter {
+	max-width: 100%;
+	min-width: 100%;
+}
+.h5_inner {
+	max-width: 100%;
+	min-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.h5_content {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 18px;
+	color: #a8a8a8;
+	border-left-color: #a8a8a8;
+	border-left-width: 6px;
+	border-left-style: double;
+	font-weight: bold;
+	text-decoration: none;
+	padding-left: 5px;
+	max-width: 100%;
+	min-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.h6_outter {
+	max-width: 100%;
+	min-width: 100%;
+}
+.h6_inner {
+	max-width: 100%;
+	min-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.h6_content {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	/* Not used by this theme */
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.blockquote_outter {
+	max-width: 100%;
+	min-width: 100%;
+	background-color: #FFFFFF;
+}
+.blockquote_inner {
+	max-width: 96%;
+	min-width: 96%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.blockquote_meta {
+	display: none;
+}
+.blockquote_content {
+	font-size: 16px;
+	background-color: #E0EFFF;
+	font-style: italic;
+	font-weight: normal;
+	padding: 8px;
+}
+
+.blockmessage_outter {
+	max-width: 100%;
+	min-width: 100%;
+	background-color: #FFFFFF;
+}
+.blockmessage_inner {
+	max-width: 96%;
+	min-width: 96%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.blockmessage_meta {
+	display: none;
+}
+.blockmessage_content {
+	font-size: 16px;
+	background-color: #F9F5EC;
+	font-weight: normal;
+	padding: 8px;
+}
+
+.blockstyled_outter {
+	max-width: 100%;
+	min-width: 100%;
+	background-color: #FFFFFF;
+}
+.blockstyled_inner {
+	max-width: 96%;
+	min-width: 96%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.blockstyled_meta {
+	display: none;
+}
+.blockstyled_content {
+	font-size: 16px;
+	background-color: #FFFFFF;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #CCCCCC;
+	font-weight: normal;
+	padding: 8px;
+}
+
+.flatlist_content {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 3px;
+	justify-content: flex-start; 
+}
+.flatlist_entry {
+	border-color: #D3C7C7;
+	border-width: 4px;
+	border-style: solid;
+	color: #000000;
+	background-color: #D3C7C7;
+	padding: 3px;
+	border-radius: 3px;
+}
+
+.flatlist_entry:nth-child(-n+8) {
+	border-color: #070707;
+	color: #FFFFFF;
+	background-color: #000000;
+	border-width: 4px;
+	border-style: solid;
+	padding: 3px;
+	border-radius: 3px;
+}
+
+.image_outter {
+	
+}
+.image_inner {
+	
+}
+.image_content {
+	min-height: 50vh;
+	max-height: 100vh;
+	max-width: 100%;
+}
+
+.label_text {
+	text-decoration: underline;
+}
+/* "Draft Version" */
+.special_comment_text_text[data-uuid="70e68e4424ff835e097ed5f6436745d6_2"] {
+    color: #E13939;
+    font-weight: bold;
+}
+
+.dot_1 {
+	padding-left: 5px;
+}
+.dot_2 {
+	padding-left: 10px;
+}
+.dot_3 {
+	padding-left: 15px;
+}
+
+/* Exception: Title Page */
+#page_1_outter {
+	height: 100vh;
+	overflow-y: hidden;
+}
+#page_1_meta {
+	display: none;
+}
+#page_1_inner {
+	margin: 0px;
+	padding: 0px;
+}
+#page_1_content br {
+	display: none;
+}
+#h1_1_outter {
+	display: none;
+}
+
+/* Exception: Blockmessage for "Internal Draft." */
+[data-uuid="38d45eeb91bb2690c7ad46a6c2161c6d_4"]{
+	background-color: #FFBE43;
+}
+
+/* Exception: Blockstyled for "This is an internal draft version for use by the authors, and their affiliates. Internal drafts are NOT ready for public viewing." */
+[data-uuid="874d0d46cf54ce93de1acd61deaedfc5_4"]{
+	background-color: #E13939;
+	color: #ffdbdb;
+}
+
+.inner_h3[data-uuid="d3"] {
+    
+}
+
+[data-uuid="ba"]{
+	
+}

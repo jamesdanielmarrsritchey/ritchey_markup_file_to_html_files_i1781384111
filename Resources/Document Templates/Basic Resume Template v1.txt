@@ -1,0 +1,63 @@
+# Resume
+--
+## Contact Information
+
+| First L. | 0 (000) 000-0000 | firstl@domain
+ 
+## Summary & Objective
+
+This is a summary, and objective statement.
+
+### Skills
+
+| $skill | $skill | $skill | $skill | $skill | $skill | $skill | $skill | $skill | $skill
+
+## Links
+
+{Link 1} (https://domain) | {Link 2} (https://domain)
+
+## Education
+
+### $degree
+$school ($city, $province, $country)
+$date_issued
+
+## Work Experience
+
+### $job_title
+$employer ($city, $province, $country)
+$start_date - $end_date
+
+DETAILS:
+- $accomplishment
+- $accomplishemnt
+- $duty
+- $duty
+
+### $job_title
+$employer ($city, $province, $country)
+$start_date - $end_date
+
+DETAILS:
+- $accomplishment
+- $accomplishemnt
+- $duty
+- $duty
+
+## Licenses & Certifications
+
+### $license
+$issuer ($city, $province, $country)
+$date_issued (ISSUED) - $date_expires (EXPIRES)
+
+### $certification
+$issuer ($city, $province, $country)
+$date_issued (ISSUED) - $date_expires (EXPIRES)
+
+## Professional Development
+
+### $provider
+$course_name | $program_name | $course_name
+
+### $provider
+$course_name | $program_name | $course_name

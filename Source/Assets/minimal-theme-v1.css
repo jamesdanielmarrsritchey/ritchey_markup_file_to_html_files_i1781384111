@@ -1,0 +1,328 @@
+/* Set "preserve_empty_lines" to TRUE */
+
+/* Any imported fonts need to be declared at the top of the CSS document */
+
+/* Serif */
+ 
+body {
+	font-family: serif;
+	font-size: 16px;
+	margin: 0px;
+}
+
+/* Noto Serif. Source: https://fonts.google.com/noto/specimen/Noto+Serif/about */
+/*
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+body {
+	font-family: 'Noto Serif', serif; 
+}
+*/
+
+/* Sans-serif */
+/* 
+body {
+	font-family: sans-serif; 
+}
+*/
+
+/* Noto Sans-Serif. Source: https://fonts.google.com/noto/specimen/Noto+Sans/about */
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Serif&display=swap');
+body {
+	font-family: 'Noto Sans', sans-serif;
+}
+*/
+
+/* Inclusive Sans. Source: https://fonts.google.com/specimen/Inclusive+Sans/about */
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap');
+body {
+	font-family: 'Inclusive Sans', sans-serif;
+}
+*/
+.page_outter {
+		background-color: #FFFFFF;
+		height: 99vh;
+    	margin: 0px;
+}
+
+@media print {
+    .page_outter {
+        height: auto;
+        overflow: visible;
+        box-sizing: border-box;
+    }
+}
+.page_inner {
+	padding-bottom: 25px;
+	padding-top: 25px;
+	padding-right: 25px;
+	padding-left: 25px;
+}
+.page_meta {
+	text-align: right;
+}
+.page_content {
+	
+}
+
+.concatenation_buffer_top {
+	position: fixed;
+	top: 0;
+	min-height: 1px;
+	left: 0;
+	z-index: 2;
+	color: #fff;
+	font-size: 2px;
+	text-align: left;
+	display: none;
+}
+.concatenation_buffer_bottom {
+	position: fixed;
+	bottom: 0;
+	min-height: 1px;
+	left: 0;
+	z-index: 2;
+	color: #fff;
+	font-size: 2px;
+	text-align: left;
+	display: none;
+}
+
+.hr_content {
+	border-width: 0px;
+	border-top-color: #EEEEEE;
+	border-top-style: dotted;
+	border-top-width: 8px;
+	display: none;
+}
+@media print {
+   .hr_content {
+  		display: none;
+  	}
+}
+
+.bold {
+	font-weight: bold;
+}
+.italic {
+	font-style: italic;
+}
+.underline {
+	text-decoration: underline;
+}
+.strikethrough {
+	text-decoration: line-through;
+}
+
+a:link {
+  color: #072cf0;
+  text-decoration: underline;
+}
+a:visited {
+  color: #072cf0;
+  text-decoration: underline;
+}
+a:hover {
+  color: #072cf0;
+  text-decoration: underline;
+}
+a:active {
+  color: #072cf0;
+  text-decoration: underline;
+}
+
+.tab_outter {
+	min-width: 0.5in;
+	width: 0.5in;
+	display: inline-block;
+}
+
+.h1_outter {
+	
+}
+.h1_inner {
+	
+}
+.h1_content {
+	font-size: 34px;
+	font-weight: bolder;
+	text-decoration: underline;
+	padding: 0px;
+	margin: 0px;
+}
+
+.h2_outter {
+	
+}
+.h2_inner {
+	
+}
+.h2_content {
+	font-size: 30px;
+	font-weight: bolder;
+	padding: 0px;
+	margin: 0px;
+}
+
+.h3_outter {
+	
+}
+.h3_inner {
+	
+}
+.h3_content {
+	font-size: 26px;
+	font-weight: normal;
+	text-decoration: underline;
+	padding: 0px;
+	margin: 0px;
+}
+
+.h4_outter {
+	
+}
+.h4_inner {
+	
+}
+.h4_content {
+	font-size: 22px;
+	font-weight: lighter;
+	text-decoration: underline;
+	padding: 0px;
+	margin: 0px;
+}
+
+.h5_outter {
+	
+}
+.h5_inner {
+	
+}
+.h5_content {
+	font-size: 18px;
+	font-weight: bolder;
+	padding: 0px;
+	margin: 0px;
+}
+
+.h6_outter {
+	
+}
+.h6_inner {
+	
+}
+.h6_content {
+	padding: 0px;
+	margin: 0px;
+	font-size: 16px;
+	font-weight: lighter;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.blockquote_outter {
+	background-color: #FFFFFF;
+	min-width: 100%;
+}
+.blockquote_inner {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.blockquote_meta {
+	display: none;
+}
+.blockquote_content {
+	background-color: #CDC4E6;
+	font-size: 16px;
+	font-weight: normal;
+	text-decoration: none;
+	padding: 10px;
+}
+
+.blockmessage_outter {
+	background-color: #FFFFFF;
+	min-width: 100%;
+}
+.blockmessage_inner {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.blockmessage_meta {
+	display: none;
+}
+.blockmessage_content {
+	background-color: #CCCCCC;
+	font-size: 16px;
+	font-weight: normal;
+	text-decoration: none;
+	padding: 10px;
+}
+
+.blockstyled_outter {
+	background-color: #FFFFFF;
+	min-width: 100%;
+}
+.blockstyled_inner {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.blockstyled_meta {
+	display: none;
+}
+.blockstyled_content {
+	background-color: #BBE6CE;
+	font-size: 16px;
+	font-weight: normal;
+	text-decoration: none;
+	padding: 10px;
+}
+
+.flatlist_content {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 3px;
+	justify-content: flex-start; 
+}
+.flatlist_entry {
+	border-color: #D3C7C7;
+	border-width: 4px;
+	border-style: solid;
+	color: #000000;
+	background-color: #D3C7C7;
+	padding: 3px;
+	border-radius: 3px;
+}
+
+.flatlist_entry:nth-child(-n+8) {
+	border-color: #070707;
+	color: #FFFFFF;
+	background-color: #000000;
+	border-width: 4px;
+	border-style: solid;
+	padding: 3px;
+	border-radius: 3px;
+}
+
+.image_outter {
+	
+}
+.image_inner {
+	
+}
+.image_content {
+	min-height: 50vh;
+	max-height: 100vh;
+	max-width: 100%;
+}
+
+.inner_h3[data-marker-md5="d3"] {
+    
+}
+
+[data-md5="ba"]{
+	
+}

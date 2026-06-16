@@ -1,0 +1,3 @@
+# Description
+
+Ritchey Markup File To HTML Files i1781384111 is a PHP function which converts a specified markup file (that uses Ritchey Markup Language) to a series of HTML files for offline viewing, or conversion to other formats.
