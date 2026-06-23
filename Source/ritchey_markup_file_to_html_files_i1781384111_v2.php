@@ -1,7 +1,7 @@
 <?php
 # Meta
 /*
-Name: Ritchey Markup File To HTML Files i1781384111 v1
+Name: Ritchey Markup File To HTML Files i1781384111 v2
 Description: Convert text (marked using a custom markup language) to HTML files. Returns "TRUE" on success. Returns "FALSE" on failure.
 Notes:
 - Optional arguments can be "NULL" to skip them in which case they will use default values.
@@ -27,8 +27,8 @@ display_errors: bool, optional
 "
 */
 # Content
-if (function_exists('ritchey_markup_file_to_html_files_i1781384111_v1') === FALSE){
-function ritchey_markup_file_to_html_files_i1781384111_v1($source_file, $destination_folder, $css_file = NULL, $preserve_empty_lines = NULL, $overwrite = NULL, $display_errors = NULL){
+if (function_exists('ritchey_markup_file_to_html_files_i1781384111_v2') === FALSE){
+function ritchey_markup_file_to_html_files_i1781384111_v2($source_file, $destination_folder, $css_file = NULL, $preserve_empty_lines = NULL, $overwrite = NULL, $display_errors = NULL){
 	$errors = array();
 	$var_fb0366f4_location_str = realpath(dirname(__FILE__));
 	$var_fb0366f4_n_num = 1;
@@ -1476,12 +1476,12 @@ HEREDOC;
 	if ($display_errors === TRUE){
 		if (@empty($errors) === FALSE){
 			$message = @implode(", ", $errors);
-			if (function_exists('ritchey_markup_file_to_html_files_i1781384111_v1_format_error') === FALSE){
-				function ritchey_markup_file_to_html_files_i1781384111_v1_format_error($errno, $errstr){
+			if (function_exists('ritchey_markup_file_to_html_files_i1781384111_v2_format_error') === FALSE){
+				function ritchey_markup_file_to_html_files_i1781384111_v2_format_error($errno, $errstr){
 					echo $errstr;
 				}
 			}
-			set_error_handler("ritchey_markup_file_to_html_files_i1781384111_v1_format_error");
+			set_error_handler("ritchey_markup_file_to_html_files_i1781384111_v2_format_error");
 			trigger_error($message, E_USER_ERROR);
 		}
 	}

@@ -2,8 +2,8 @@
 
 Name: Ritchey Markup File To HTML Files
 Implementation: 1781384111
-Version: 1
+Version: 2
 Release Type: Stable
-Long Identifier: Ritchey Markup File To HTML Files i1781384111 v1
-Short Identifier: RMFTHFi1781384111v1
+Long Identifier: Ritchey Markup File To HTML Files i1781384111 v2
+Short Identifier: RMFTHFi1781384111v2
 Author: James Daniel Marrs Ritchey
