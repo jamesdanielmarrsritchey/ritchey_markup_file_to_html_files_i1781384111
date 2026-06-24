@@ -11,8 +11,8 @@ while (is_dir($var_7e7480cd_source_path_str) !== TRUE) {
 		exit(1);
 	}
 }
-require_once $var_7e7480cd_base_path_str . '/Source/ritchey_markup_file_to_html_files_i1781384111_v2.php';
-$var_7e7480cd_return_boo = ritchey_markup_file_to_html_files_i1781384111_v2("{$var_7e7480cd_base_path_str}/Temporary/Example Document 1/Input/Markup.txt", "{$var_7e7480cd_base_path_str}/Temporary/Example Document 1/Output", "{$var_7e7480cd_base_path_str}/Source/Assets/minimal-theme-v1.css", TRUE, TRUE, TRUE);
+require_once $var_7e7480cd_base_path_str . '/Source/ritchey_markup_file_to_html_files_i1781384111_v3.php';
+$var_7e7480cd_return_boo = ritchey_markup_file_to_html_files_i1781384111_v3("{$var_7e7480cd_base_path_str}/Temporary/Example Document 1/Input/Markup.txt", "{$var_7e7480cd_base_path_str}/Temporary/Example Document 1/Output", "{$var_7e7480cd_base_path_str}/Source/Assets/minimal-theme-v1.css", TRUE, TRUE, TRUE);
 if ($var_7e7480cd_return_boo === TRUE){
 	echo "TRUE" . PHP_EOL;
 } else {

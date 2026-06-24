@@ -14,18 +14,18 @@ while (is_dir($var_7e7480cd_source_path_str) !== TRUE) {
 	}
 }
 // Create HTML Files
-require_once $var_7e7480cd_base_path_str . '/Source/ritchey_markup_file_to_html_files_i1781384111_v2.php';
-$var_7e7480cd_return_boo = ritchey_markup_file_to_html_files_i1781384111_v2("{$var_7e7480cd_base_path_str}/Temporary 2/Example Document 1/Input/Markup.txt", "{$var_7e7480cd_base_path_str}/Temporary 2/Example Document 1/Output", "{$var_7e7480cd_base_path_str}/Source/Assets/ebook-theme-v1.css", TRUE, TRUE, TRUE);
+require_once $var_7e7480cd_base_path_str . '/Source/ritchey_markup_file_to_html_files_i1781384111_v3.php';
+$var_7e7480cd_return_boo = ritchey_markup_file_to_html_files_i1781384111_v3("{$var_7e7480cd_base_path_str}/Temporary 2/Example Document 1/Input/Markup.txt", "{$var_7e7480cd_base_path_str}/Temporary 2/Example Document 1/Output", "{$var_7e7480cd_base_path_str}/Source/Assets/ebook-theme-v1.css", TRUE, TRUE, TRUE);
 if ($var_7e7480cd_return_boo === TRUE){
 	echo "TRUE" . PHP_EOL;
 } else {
 	echo "FALSE" . PHP_EOL;
 }
 // Get a list of the HTML files created
-require_once $var_7e7480cd_base_path_str . '/Resources/Scripts/html_files_to_pdf_file_i1781475868_v0.2/Custom Dependencies/get_recursive_file_list_i1781476833_v0.1.php';
+require_once $var_7e7480cd_base_path_str . '/Resources/Scripts/html_files_to_pdf_file_i1781475868_v0.3/Custom Dependencies/get_recursive_file_list_i1781476833_v0.1.php';
 $var_7e7480cd_html_files_arr = fun_e16a0092_get_recursive_file_list_i1781476833_v0_1("{$var_7e7480cd_base_path_str}/Temporary 2/Example Document 1/Output", ".html");
 // Sort the array of files so they are in order by filename number (e.g., "1.html, 2.html, 10.html")
-require_once $var_7e7480cd_base_path_str . '/Resources/Scripts/html_files_to_pdf_file_i1781475868_v0.2/Custom Dependencies/sort_array_by_extracted_digits_i1782253566_v0.3.php';
+require_once $var_7e7480cd_base_path_str . '/Resources/Scripts/html_files_to_pdf_file_i1781475868_v0.3/Custom Dependencies/sort_array_by_extracted_digits_i1782253566_v0.3.php';
 $var_7e7480cd_html_files_arr = fun_a7c4d912_sort_array_by_extracted_digits_i1782253566_v0_3($var_7e7480cd_html_files_arr, 'discard');
 // For each HTML file create a version with added printing styles
 $var_7e7480cd_html_chromium_files_arr = array();
@@ -53,6 +53,7 @@ EOT;
 	$var_7e7480cd_html_chromium_files_arr[] = "{$dirname}/{$n}.html";
 }
 unset($item);
+$var_7e7480cd_html_chromium_files_arr = array_reverse($var_7e7480cd_html_chromium_files_arr);
 // For each HTML file convert to PDF
 $var_7e7480cd_pdf_files_arr = array();
 $n = 0;
@@ -63,6 +64,7 @@ foreach ($var_7e7480cd_html_chromium_files_arr as &$item){
 	$var_7e7480cd_pdf_files_arr[] = "{$dirname}/{$n}.pdf";
 }
 unset($item);
+$var_7e7480cd_pdf_files_arr = array_reverse($var_7e7480cd_pdf_files_arr);
 // Merge all the PDFs
 function fun_f8c1d4a2_combine_pdfs_i1_v0_1(
 	array $arr_pdf_paths,
